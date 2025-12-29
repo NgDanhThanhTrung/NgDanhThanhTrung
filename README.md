@@ -35,13 +35,3 @@ Nếu bạn yêu thích những gì tôi làm, bạn có thể mời tôi một 
 </a>
 
 ---
-
-### 📊 Hoạt động GitHub
-<p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=ngdanhthanhtrung&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ngdanhthanhtrung&layout=compact&theme=tokyonight" />
-</p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=00f2fe&height=100&section=footer" />
-</p>
