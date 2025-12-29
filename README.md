@@ -1,56 +1,47 @@
-#!name=𝐀𝐥𝐥 𝐈𝐧 𝐎𝐧𝐞
-#!desc= NgDanhThanhTrung
+# 💫 Nguyễn Danh Thành Trung
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=ngdanhthanhtrung&label=Profile%20views&color=00f2fe&style=flat" alt="Views" />
+</p>
 
-[Rule]
-AND,((DOMAIN-SUFFIX,googlevideo.com), (PROTOCOL,UDP)),REJECT
-AND,((DOMAIN,youtubei.googleapis.com), (PROTOCOL,UDP)),REJECT
+---
 
-[Header Rewrite]
-^https?://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) header-del x-revenuecat-etag
-^https?://api.revenuecat.com/.+/(receipts$|subscribers/?(.*?)*$) header-del X-RevenueCat-ETag
+### 👤 Giới thiệu
+<div align="center">
+  <img src="https://img.shields.io/badge/Role-Digital%20Creator%20%26%20Developer-00f2fe?style=for-the-badge" />
+</div>
 
-[Script]
+<p align="center">
+  Chào mừng bạn đến với không gian của tôi! Tôi là một nhà phát triển đam mê sáng tạo nội dung số và các giải pháp công nghệ.
+</p>
 
-#Sub-Store
-#hostname = sub.store
-Sub-Store Core=type=http-request,pattern=^https?:\/\/sub\.store\/((download)|api\/(preview|sync|(utils\/node-info))),script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-1.min.js,requires-body=true,timeout=120
-Sub-Store Simple=type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-0.min.js,requires-body=true
+---
 
-Sub-Store Sync=type=cron,cronexp=0 0 * * *,wake-system=1,timeout=120,script-path=https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js
-#************************************#
+### 🔗 Liên kết kết nối
+| Nền tảng | Liên kết |
+| :--- | :--- |
+| **💬 Zalo** | [![Zalo](https://img.shields.io/badge/Zalo-0068FF?style=for-the-badge&logo=Zalo&logoColor=white)](https://zalo.me/0981506719) |
+| **📸 Instagram** | [![Instagram](https://img.shields.io/badge/Instagram-E1306C?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/ttrungisme.bi) |
+| **🎵 TikTok** | [![TikTok](https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white)](https://www.tiktok.com/@thanhtrungnguyendanh) |
+| **✈️ Telegram** | [![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/NgDanhThanhTrung) |
+| **🚀 Website** | [![Website](https://img.shields.io/badge/Shadowrocket-00f2fe?style=for-the-badge&logo=rocket&logoColor=black)](https://ngdanhthanhtrung.github.io/MyWeb/) |
 
-#Youtube
-#hostname = *.googlevideo.com, youtubei.googleapis.com
-youtube.request = type=http-request,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|reel\/reel_watch_sequence|get_watch),requires-body=1,max-size=-1,binary-body-mode=1,engine=jsc,script-path=https://github.com/lonely0811/Surge/raw/main/js/youtube.request.preview.js
+---
 
-youtube.response = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch),requires-body=1,max-size=-1,binary-body-mode=1,engine=jsc,script-path=https://github.com/lonely0811/Surge/raw/main/js/youtube.response.preview.js,argument="{"lyricLang":"vi","captionLang":"vi","blockUpload":true,"blockImmersive":true,"debug":false}"
-#************************************#
+### 💖 Ủng hộ tôi (Donate)
+Nếu bạn yêu thích những gì tôi làm, bạn có thể mời tôi một ly cà phê qua liên kết bên dưới:
 
-#SpotifyPremium
-#hostname = spclient.wg.spotify.com
-spotify-json = type=http-request,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/,requires-body=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js
+<a href="https://ngdanhthanhtrung.github.io/Bank/" target="_blank">
+  <img src="https://img.shields.io/badge/Donate-Thanh_Trung-ff4757?style=for-the-badge&logo=heartbeat&logoColor=white" />
+</a>
 
-spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,requires-body=1,binary-body-mode=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js,script-update-interval=0
-#************************************#
+---
 
-#SoundCloudGo+
-#hostname= api-mobile.soundcloud.com
-SoundCloudGo+=type=http-response,pattern=https://api-mobile.soundcloud.com/configuration/ios,requires-body=1,script-path=https://raw.githubusercontent.com/DungHoang120401/Nobita/refs/heads/Module/SoundCloud.js
-#************************************#
+### 📊 Hoạt động GitHub
+<p align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=ngdanhthanhtrung&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ngdanhthanhtrung&layout=compact&theme=tokyonight" />
+</p>
 
-#Revenuecat
-#hostname = api.revenuecat.com
-revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/DungHoang120401/Nobita/Module/Locket_Gold.js, requires-body=true, max-size=-1, timeout=60
-
-deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/DungHoang120401/Nobita/Module/LKG_delete_header.js, timeout=60
-#************************************#
-
-#Truecaller
-#hostname = premium*.truecaller.com
-Truecaller = type=http-response,pattern=^https://premium-(.+)\.truecaller\.com/v\d/(subscriptions|products\/apple),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/DungHoang120401/Nobita/refs/heads/Module/TrueCaller.js
-
-[Map Local]
-^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data-type=text data=""
-
-[MITM]
-hostname = %APPEND% *.googlevideo.com, youtubei.googleapis.com, premium*.truecaller.com, sub.store, api.revenuecat.com, spclient.wg.spotify.com, api-mobile.soundcloud.com
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=00f2fe&height=100&section=footer" />
+</p>
