@@ -20,11 +20,10 @@
 ### 🔗 Liên kết kết nối
 | Nền tảng | Liên kết |
 | :--- | :--- |
-| **💬 Zalo** | [![Zalo](https://img.shields.io/badge/Zalo-0068FF?style=for-the-badge&logo=Zalo&logoColor=white)](https://zalo.me/0981506719) |
 | **📸 Instagram** | [![Instagram](https://img.shields.io/badge/Instagram-E1306C?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/ttrungisme.bi) |
 | **🎵 TikTok** | [![TikTok](https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white)](https://www.tiktok.com/@thanhtrungnguyendanh) |
 | **✈️ Telegram** | [![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/NgDanhThanhTrung) |
-| **🚀 Website** | [![Website](https://img.shields.io/badge/Shadowrocket-00f2fe?style=for-the-badge&logo=rocket&logoColor=black)](https://ngdanhthanhtrung.github.io/MyWeb/) |
+| **🚀 Website** | [![Website](https://img.shields.io/badge/Shadowrocket-00f2fe?style=for-the-badge&logo=rocket&logoColor=black)](https://ngdanhthanhtrung.github.io/My-Modules/) |
 
 ---
 
