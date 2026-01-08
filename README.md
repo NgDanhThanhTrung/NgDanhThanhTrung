@@ -1,7 +1,5 @@
 # 💫 Nguyễn Danh Thành Trung
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=ngdanhthanhtrung&label=Profile%20views&color=00f2fe&style=flat" alt="Views" />
-</p>
+
 
 ---
 
