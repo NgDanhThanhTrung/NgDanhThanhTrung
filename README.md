@@ -64,7 +64,7 @@
   <img src="https://img.shields.io/badge/LinkedIn-0A101F?style=for-the-badge&logoColor=white&labelColor=0A101F&logo=linkedin" alt="LinkedIn" />
 </a>
 &nbsp;&nbsp;
-<a href="https://www.instagram.com/YOUR_INSTAGRAM/">
+<a href="https://www.instagram.com/ttrungisme.bi/">
   <img src="https://img.shields.io/badge/Instagram-0A101F?style=for-the-badge&logo=instagram&logoColor=A78BFA&labelColor=0A101F" alt="Instagram" />
 </a>
 &nbsp;&nbsp;
