@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Project Name",
+    "repo": "NgDanhThanhTrung/repo-name",
+    "logo": "logo.png",
+    "description": "One-line description of what this project does",
+    "tags": ["Tech1", "Tech2", "Tech3"]
+  }
+]
